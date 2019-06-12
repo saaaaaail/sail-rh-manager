@@ -38,6 +38,7 @@ public class CodeGenerator {
     }
 
     public static void main(String[] args) {
+
         //代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
@@ -51,18 +52,18 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://172.16.55.185:3306/haoke?" +
+        dsc.setUrl("jdbc:mysql://47.102.149.211:3306/sail_rh?" +
                 "useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setUsername("sail");
+        dsc.setPassword("123456");
         mpg.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(scanner("模块名"));
-        pc.setParent("cn.itcast.haoke.dubbo.server");
+        pc.setParent("com.sail.rh.dubbo.server");
         mpg.setPackageInfo(pc);
         // 自定义配置
         InjectionConfig cfg = new InjectionConfig() {
@@ -89,7 +90,7 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("cn.itcast.haoke.dubbo.server.pojo.BasePojo");
+        strategy.setSuperEntityClass("com.sail.rh.dubbo.server.pojo.BasePojo");
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         //

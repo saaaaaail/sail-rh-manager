@@ -14,7 +14,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="generator" target="1.8" />
-      <module name="house-resources" target="1.8" />
       <module name="house-resources-dubbo-interface" target="1.8" />
       <module name="house-resources-dubbo-service" target="1.8" />
       <module name="sail-rh-manager" target="1.8" />
@@ -26,7 +25,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="generator" options="-parameters" />
-      <module name="house-resources" options="-parameters" />
       <module name="house-resources-dubbo-interface" options="-parameters" />
       <module name="house-resources-dubbo-service" options="-parameters" />
       <module name="sail-rh-manager-api-server" options="-parameters" />
