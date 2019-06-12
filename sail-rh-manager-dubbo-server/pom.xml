@@ -12,7 +12,7 @@
     <artifactId>sail-rh-manager-dubbo-server</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>house-resources</module>
+        <module>sail-rh-manager-dubbo-server-house-resources</module>
         <module>generator</module>
     </modules>
 
